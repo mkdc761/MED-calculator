@@ -1,0 +1,33 @@
+<html>
+   <head></head>
+   <body>
+       
+   
+       function calculate() 
+       {
+          var my1 = 30;
+          var my2 = document.getElementById('dose').value;
+          var result = document.getElementById('MED-bup-tab');
+          var myResult = (my1) * parseInt(my2); 
+          result.value = myResult;
+       }
+       <form name=”calculator”>
+         <table>
+            <tr>
+               <td><input type=”text” name="medication” value=”Medications" id="header” disabled></td>
+               <td><input type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
+               <td><input type=”text” name="MED” value=”MED" id="header” disabled></td>
+               <td><input type=”text” name="medication” value=”Medications" id="header” disabled></td>
+               <td><input type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
+               <td><input type=”text” name="MED” value=”MED" id="header” disabled></td>
+            </tr>
+             <tr>
+              <td><input type=”text” name=”buprenorphine-tablet-film” value=”Burpenorphine" id="med” disabled></td>
+              <td><input type=”text” name=”dose” value=”" id="dose"></td>
+              <td><input type=”text” name=”zero” value=”0" id="MED-Bup-tab"disabled></td>
+              
+           </tr>
+         </table>
+      </form>
+   </body>
+</html>
