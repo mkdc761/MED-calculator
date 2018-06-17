@@ -2,15 +2,16 @@
    <head></head>
    <body>
        
-   
-       function calculate() 
+   <script>
+       function calculate(x) 
        {
-          var my1 = 30;
+          var my1 = x;
           var my2 = document.getElementById('dose').value;
           var result = document.getElementById('MED-bup-tab');
           var myResult = (my1) * parseInt(my2); 
           result.value = myResult;
        }
+       </script>
        <form name=”calculator”>
          <table>
             <tr>
@@ -24,7 +25,7 @@
              <tr>
               <td><input type=”text” name=”buprenorphine-tablet-film” value=”Burpenorphine" id="med” disabled></td>
               <td><input type=”text” name=”dose” value=”" id="dose"></td>
-              <td><input type=”text” name=”zero” value=”0" id="MED-Bup-tab"disabled></td>
+              <td><input type=”text” name=”zero” value=”0" id=calculate(30) disabled></td>
               
            </tr>
          </table>
