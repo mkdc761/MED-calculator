@@ -1,5 +1,24 @@
+<!Doctype html>
 <html>
-   <head></head>
+   <head>
+   <style type="text/css">
+   table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:7px;padding:5px 2.5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:7px;font-weight:normal;padding:5px 2.5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+   </head>
    <body>
        
    <script>
@@ -12,23 +31,30 @@
           result.value = myResult;
        }
        </script>
-       <form name=”calculator”>
+    
          <table>
             <tr>
-               <td><input type=”text” name="medication” value=”Medications" id="header” disabled></td>
-               <td><input type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
-               <td><input type=”text” name="MED” value=”MED" id="header” disabled></td>
-               <td><input type=”text” name="medication” value=”Medications" id="header” disabled></td>
-               <td><input type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
-               <td><input type=”text” name="MED” value=”MED" id="header” disabled></td>
+               <th>Medications</th>
+               <th>Daily Dose (mg)</th>
+               <th>MED</th>
+               <th>Medications</th>
+               <th>Daily Dose (mg)</th>
+               <th>MED</th>
+               <!--<th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
+               <th><input class="tg-yw41" type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
+               <th><input class="tg-yw41" type=”text” name="MED” value=”MED" id="header” disabled></td>
+               <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
+               <th><input class="tg-yw41" type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
+               <th><input class="tg-yw41" type=”text” name="MED” value=”MED" id="header” ></td>-->
             </tr>
              <tr>
-              <td><input type=”text” name=”buprenorphine-tablet-film” value=”Burpenorphine" id="med” disabled></td>
-              <td><input type=”text” name=”dose” value=”" id="dose"></td>
-              <td><input type=”text” name=”zero” value=”0" id=calculate(30) disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=”Burpenorphine" id="med” disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”dose” value=”" id="dose"></td>
+              <td><input class="tg-yw41" type=”text” name=”zero” value=”0" disabled></td>
+     
               
            </tr>
          </table>
-      </form>
+   
    </body>
 </html>
