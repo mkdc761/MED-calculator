@@ -29,10 +29,12 @@ td, th {
           var result = document.getElementById('MED-bup-tab');
           var myResult = (my1) * parseInt(my2); 
           result.value = myResult;
+          return myResult
        }
        </script>
-    
+       <form>
          <table>
+
             <tr>
                <th>Medications</th>
                <th>Daily Dose (mg)</th>
@@ -40,21 +42,23 @@ td, th {
                <th>Medications</th>
                <th>Daily Dose (mg)</th>
                <th>MED</th>
-               <!--<th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
+               
+               <!--I will redo styling at the end. <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="MED” value=”MED" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="MED” value=”MED" id="header” ></td>-->
+               
             </tr>
              <tr>
-              <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=”Burpenorphine" id="med” disabled></td>
-              <td><input class="tg-yw41" type=”text” name=”dose” value=”" id="dose"></td>
-              <td><input class="tg-yw41" type=”text” name=”zero” value=”0" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0"></td></td>
+              <td><input class="tg-yw41" type=”text” name=”zero” value="" disabled></td>
      
               
            </tr>
          </table>
-   
+     </form>
    </body>
 </html>
