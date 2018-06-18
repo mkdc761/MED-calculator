@@ -54,7 +54,7 @@ td, th {
              <tr>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0"></td></td>
-              <td>'<input class="tg-yw41" type=”text” name=”zero” value="" Id="MED-bup-tab" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”zero” value="" Id="MED-bup-tab" disabled></td>
      
               
            </tr>
