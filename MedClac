@@ -20,18 +20,18 @@ td, th {
 </style>
    </head>
    <body>
-       
-   <script>
-       function calculate(x) 
-       {
+     <script>
+      function calculate(x) 
+      {
           var my1 = x;
           var my2 = document.getElementById('dose').value;
-          var result = document.getElementById('MED-bup-tab');
-          var myResult = (my1) * parseInt(my2); 
+          document.getElementById('MED-bup-tab').value = (my1) * parseInt(my2); 
+          <1--var myResult = (my1) * parseInt(my2); 
           result.value = myResult;
-          return myResult
+          return myResult;-->
        }
-       </script>
+      </script>
+   
        <form>
          <table>
 
@@ -54,11 +54,12 @@ td, th {
              <tr>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0"></td></td>
-              <td><input class="tg-yw41" type=”text” name=”zero” value="" disabled></td>
+              <td>'<input class="tg-yw41" type=”text” name=”zero” value="" Id="MED-bup-tab" disabled></td>
      
               
            </tr>
          </table>
      </form>
    </body>
+   
 </html>
