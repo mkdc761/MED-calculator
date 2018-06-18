@@ -24,7 +24,7 @@ td, th {
       function calculate(x) 
       {
           var my1 = x;
-          var my2 = document.getElementById('dose').value;
+          var my2 = document.getElementById('dose').value;<!--I haven't figured out how to refer to the correct <td> since it is different from calling <td>-->
           document.getElementById('MED-bup-tab').innerHTML = (my1) * parseInt(my2); 
           
           <1--var myResult = (my1) * parseInt(my2); 
