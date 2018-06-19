@@ -1,6 +1,7 @@
 <!Doctype html>
 <html>
    <head>
+   <SCRIPT language="javascript" src="date.js"></SCRIPT>
    <style type="text/css">
    table {
     font-family: arial, sans-serif;
@@ -24,7 +25,7 @@ td, th {
       function calculate(x) 
       {
           var my1 = x;
-          var my2 = document.getElementById('dose').value;<!--I haven't figured out how to refer to the correct <td> since it is different from calling <td>-->
+          var my2 = document.getElementById('r2').value;<!--I haven't quite figured out how to refer to the correct <td> since it is different from calling <td>-->
           document.getElementById('MED-bup-tab').innerHTML = (my1) * parseInt(my2); 
           
           <1--var myResult = (my1) * parseInt(my2); 
@@ -54,8 +55,8 @@ td, th {
             </tr>
              <tr>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
-              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0"></td></td>
-              <td onload="calculate(30)"><input class="tg-yw41" type=”text” name=”zero” value="" Id="MED-bup-tab" disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0" Id="r2"></td></td>
+              <td onload="calculate(30)" Id="MED-bup-tab" type=”text” name=”zero” value="" disabled></td><input class="tg-yw41"  disabled>
      
               
            </tr>
