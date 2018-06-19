@@ -21,18 +21,7 @@ td, th {
 </style>
    </head>
    <body>
-     <script>
-      function calculate(x) 
-      {
-          var my1 = x;
-          var my2 = document.getElementById('r2').value;<!--I haven't quite figured out how to refer to the correct <td> since it is different from calling <td>-->
-          document.getElementById('MED-bup-tab').innerHTML = (my1) * parseInt(my2); 
-          
-          <1--var myResult = (my1) * parseInt(my2); 
-          result.value = myResult;
-          return myResult;-->
-       }
-      </script>
+    
    
        <form>
          <table>
@@ -55,13 +44,26 @@ td, th {
             </tr>
              <tr>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
-              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0" Id="r2" onchange="calculate(30)"></td>
-              <td ><input> Id="MED-bup-tab" type=”text” name=”zero” value="" disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2" onchange="calculate(this.30)"></td>
+              <td ><input Id="MED-bup-tab" type=”text” name=”zero” value="" disabled></td>
      
               
            </tr>
          </table>
      </form>
+      <script type="text/javascript">
+      function calculate(x) 
+      {
+          var my1 = x;
+          var my2 = document.getElementById('r2').value;
+          document.getElementById('MED-bup-tab').innerTEXT = (my1) * parseInt(my2); 
+          return document.getElementById('MED-bup-tab').innerTEXT
+          
+          <!--var myResult = (my1) * parseInt(my2); 
+          result.value = myResult;
+          return myResult;-->
+       }
+        </script>    
    </body>
    
 </html>
