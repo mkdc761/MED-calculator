@@ -71,6 +71,95 @@
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c5" onchange="calculate9('0.16')"></td>
               <td><input Id="MED-fent-nasal" type=”text” name=”zero” value="" disabled></td> 
           </tr>
+            <tr>
+              <td><input class="tg-yw41" type=”text” name=”Hydromorphone” value=Hydromorphone id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c2" onchange="calculate10('4')"></td>
+              <td><input Id="MED-Hydromorphone" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Fantanyl, nasal spray” value="Fantanyl, transdermal patch" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c5" onchange="calculate11('7.2')"></td>
+              <td><input Id="MED-fent-trans-patch" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Levomethadyl acetate” value="Levomethadyl acetate" id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r8c2" onchange="calculate12('8')"></td>
+              <td><input Id="MED-Levomethadyl-acetate" type=”text” name=”zero” value="" disabled></td>
+              <td><input  value="*Dosage of above transdermal medication in mcg/hr" disabled></td>
+           </tr>
+            <tr>
+              <td><input class="tg-yw41" type=”text” name=”Levomethadyl tartrate” value="Levomethadyl tartrate" id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r9c2" onchange="calculate13('11')"></td>
+              <td><input Id="MED-Levorphanol-tartrate" type=”text” name=”zero” value="" disabled></td>
+              <td><input  value="Intrathecal opioids" disabled></td>
+           </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Meperidine” value="Meperidine" id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r10c2" onchange="calculate14('.1')"></td>
+              <td><input Id="MED-Meperidine" type=”text” name=”zero” value="" disabled></td>
+              <td><input  value="Intrathecal opioids" disabled></td>
+           </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Methadone” value="Methadone" id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r11c2" onchange="calculate15('3')"></td>
+              <td><input Id="MED-Methadone" type=”text” name=”zero” value="" disabled></td>
+              <td><input  value="Intrathecal opioids" disabled></td>
+           </tr>
+            <tr>
+              <td><input class="tg-yw41" type=”text” name=”Morphine” value=Morphine id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r12c2" onchange="calculate16('1')"></td>
+              <td><input Id="MED-Morphine" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Diamorphone” value="Diamorphone" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r12c5" onchange="calculate17('98')"></td>
+              <td><input Id="MED-Diamorphone" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Opium” value=Opium id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r13c2" onchange="calculate18('1')"></td>
+              <td><input Id="MED-Opium" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Fentanyl” value="Fentanyl" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r13c5" onchange="calculate19('30')"></td>
+              <td><input Id="MED-Fentanyl" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Oxycodone” value=Oxycodone id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r14c2" onchange="calculate20('1.5')"></td>
+              <td><input Id="MED-Oxycodone" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Hydromorphone” value="Hydromorphone" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r14c5" onchange="calculate21('375')"></td>
+              <td><input Id="MED-Hydromorphone-intra" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+            <tr>
+              <td><input class="tg-yw41" type=”text” name=”Oxymorphone” value=Oxymorphone id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r15c2" onchange="calculate22('3')"></td>
+              <td><input Id="MED-Oxymorphone" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Meperidine” value="Meperidine" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r15c5" onchange="calculate23('7.5')"></td>
+              <td><input Id="MED-Meperidine-intra" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Pentazocine” value=Pentazocine id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r16c2" onchange="calculate24('.37')"></td>
+              <td><input Id="MED-Pentazocine" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Methadone” value="Methadone" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r16c5" onchange="calculate25('600')"></td>
+              <td><input Id="MED-Methadone-intra" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Taentadol” value=Tapentadol id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r17c2" onchange="calculate26('.4')"></td>
+              <td><input Id="MED-Tapentadol" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Morphine” value="Morphine" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r17c5" onchange="calculate27('300')"></td>
+              <td><input Id="MED-Morphine-intra" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+            <tr>
+              <td><input class="tg-yw41" type=”text” name=”Tramadol” value=Tramadol id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c2" onchange="calculate28('.1')"></td>
+              <td><input Id="MED-Tramadol" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Sufentanil” value="Sufentanil" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c5" onchange="calculate29('60')"></td>
+              <td><input Id="MED-Sufentanil-intra" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           
        </table>
    </form>
     <script type="text/javascript">
@@ -144,6 +233,142 @@
         document.getElementById('MED-fent-nasal').value = parseFloat(my1) * parseFloat(my2);        
        }
       
+      function calculate10(x) 
+      {
+        var my1 = x;
+        var my2 = document.getElementById('r7c2').value;
+        document.getElementById('MED-Hydromorphone').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate11(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r7c5').value;
+        document.getElementById('MED-fent-trans-patch').value = (parseFloat(my1) * parseFloat(my2))/3;        
+       }
+      function calculate12(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r8c2').value;
+        document.getElementById('MED-Levomethadyl-acetate').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate13(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r9c2').value;
+        document.getElementById('MED-Levorphanol-tartrate').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate14(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r10c2').value;
+        document.getElementById('MED-Meperidine').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate15(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r11c2').value;
+        document.getElementById('MED-Methadone').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate16(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r12c2').value;
+        document.getElementById('MED-Morphine').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate17(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r12c5').value;
+        document.getElementById('MED-Diamorphone').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate18(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r13c2').value;
+        document.getElementById('MED-Opium').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate19(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r13c5').value;
+        document.getElementById('MED-Fentanyl').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate20(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r14c2').value;
+        document.getElementById('MED-Oxycodone').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate21(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r14c5').value;
+        document.getElementById('MED-Hydromorphone-intra').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate22(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r15c2').value;
+        document.getElementById('MED-Oxymorphone').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate23(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r15c5').value;
+        document.getElementById('MED-Meperidine-intra').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      function calculate24(x) 
+      {
+        var my1 = x;
+        var my2 = document.getElementById('r16c2').value;
+        document.getElementById('MED-Pentazocine').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate25(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r16c5').value;
+        document.getElementById('MED-Methadone-intra').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate26(x) 
+      {
+        var my1 = x;
+        var my2 = document.getElementById('r17c2').value;
+        document.getElementById('MED-Tapentadol').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate27(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r17c5').value;
+        document.getElementById('MED-Morphine-intra').value = parseFloat(my1) * parseFloat(my2);        
+       }
+       function calculate28(x) 
+      {
+        var my1 = x;
+        var my2 = document.getElementById('r18c2').value;
+        document.getElementById('MED-Tramadol').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate29(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r18c5').value;
+        document.getElementById('MED-Sufentanil-intra').value = parseFloat(my1) * parseFloat(my2);        
+       }
     </script>    
   </body>   
 </html>
