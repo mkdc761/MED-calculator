@@ -34,27 +34,43 @@
            <tr>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c2" onchange="calculate('30')"></td>
-              <td><input Id="MED-bup-tab" type=”text” name=”zero” value="" ></td>
+              <td><input Id="MED-bup-tab" type=”text” name=”zero” value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-trans-patch” value="Buprenorphine, transdermal patch" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c5" onchange="calculate1('12.6')"></td>
-              <td><input Id="MED-bup-trans" type=”text” name=”zero” value="" ></td> 
+              <td><input Id="MED-bup-trans" type=”text” name=”zero” value="" disabled></td> 
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Butorphanol” value=Butorphanol id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c2" onchange="calculate2('7')"></td>
-              <td><input Id="MED-Butorphanol" type=”text” name=”zero” value="" ></td>
+              <td><input Id="MED-Butorphanol" type=”text” name=”zero” value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-film” value="Buprenorphine, film" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c5" onchange="calculate3('0.03')"></td>
-              <td><input Id="MED-bup-film" type=”text” name=”zero” value="" ></td> 
+              <td><input Id="MED-bup-film" type=”text” name=”zero” value="" disabled></td> 
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Codeine” value=Codeine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c2" onchange="calculate4('.15')"></td>
-              <td><input Id="MED-Codeine" type=”text” name=”zero” value="" ></td>
+              <td><input Id="MED-Codeine" type=”text” name=”zero” value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fantanyl, buccal/Sl tab or lozenge/troche” value="Fantanyl, buccal/Sl tab or lozenge/troche" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c5" onchange="calculate5('0.13')"></td>
-              <td><input Id="MED-fent-buc" type=”text” name=”zero” value="" ></td> 
+              <td><input Id="MED-fent-buc" type=”text” name=”zero” value="" disabled></td> 
            </tr>
+            <tr>
+              <td><input class="tg-yw41" type=”text” name=”Dihydrocodeine” value=Dihydrocodeine id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c2" onchange="calculate6('.25')"></td>
+              <td><input Id="MED-dihydrocodeine" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Fantanyl, film or oral spray” value="Fantanyl, film or oral spray" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c5" onchange="calculate7('0.18')"></td>
+              <td><input Id="MED-fent-film-oralspray" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Hydrocodone” value=Hydrocodone id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c2" onchange="calculate8('1')"></td>
+              <td><input Id="MED-Hydrocodone" type=”text” name=”zero” value="" disabled></td>
+              <td><input class="tg-yw41" type=”text” name=”Fantanyl, nasal spray” value="Fantanyl, nasal spray" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c5" onchange="calculate9('0.16')"></td>
+              <td><input Id="MED-fent-nasal" type=”text” name=”zero” value="" disabled></td> 
+          </tr>
        </table>
    </form>
     <script type="text/javascript">
@@ -98,6 +114,34 @@
         var my1 = x;
         var my2 = document.getElementById('r4c5').value;
         document.getElementById('MED-fent-buc').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate6(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r5c2').value;
+        document.getElementById('MED-dihydrocodeine').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate7(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r5c5').value;
+        document.getElementById('MED-fent-film-oralspray').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+        function calculate8(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r6c2').value;
+        document.getElementById('MED-Hydrocodone').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate9(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r6c5').value;
+        document.getElementById('MED-fent-nasal').value = parseFloat(my1) * parseFloat(my2);        
        }
       
     </script>    
