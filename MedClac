@@ -31,134 +31,138 @@
               <th>Daily Dose (mg)</th>
               <th>MED</th>              
            </tr>
-           <tr>
+          <tr>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c2" onchange="calculate('30')"></td>
-              <td><input Id="MED-bup-tab" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-bup-tab" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-trans-patch” value="Buprenorphine, transdermal patch" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c5" onchange="calculate1('12.6')"></td>
-              <td><input Id="MED-bup-trans" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-bup-trans" type=”text” name="sum"value="" disabled></td> 
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Butorphanol” value=Butorphanol id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c2" onchange="calculate2('7')"></td>
-              <td><input Id="MED-Butorphanol" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Butorphanol" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-film” value="Buprenorphine, film" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c5" onchange="calculate3('0.03')"></td>
-              <td><input Id="MED-bup-film" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-bup-film" type=”text” name="sum" value="" disabled></td> 
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Codeine” value=Codeine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c2" onchange="calculate4('.15')"></td>
-              <td><input Id="MED-Codeine" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Codeine" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fantanyl, buccal/Sl tab or lozenge/troche” value="Fantanyl, buccal/Sl tab or lozenge/troche" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c5" onchange="calculate5('0.13')"></td>
-              <td><input Id="MED-fent-buc" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-fent-buc" type=”text” name="sum" value="" disabled></td> 
            </tr>
             <tr>
               <td><input class="tg-yw41" type=”text” name=”Dihydrocodeine” value=Dihydrocodeine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c2" onchange="calculate6('.25')"></td>
-              <td><input Id="MED-dihydrocodeine" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-dihydrocodeine" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fantanyl, film or oral spray” value="Fantanyl, film or oral spray" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c5" onchange="calculate7('0.18')"></td>
-              <td><input Id="MED-fent-film-oralspray" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-fent-film-oralspray" type=”text” name="sum" value="" disabled></td> 
           </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Hydrocodone” value=Hydrocodone id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c2" onchange="calculate8('1')"></td>
-              <td><input Id="MED-Hydrocodone" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Hydrocodone" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fantanyl, nasal spray” value="Fantanyl, nasal spray" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c5" onchange="calculate9('0.16')"></td>
-              <td><input Id="MED-fent-nasal" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-fent-nasal" type=”text” name="sum"value="" disabled></td> 
           </tr>
             <tr>
               <td><input class="tg-yw41" type=”text” name=”Hydromorphone” value=Hydromorphone id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c2" onchange="calculate10('4')"></td>
-              <td><input Id="MED-Hydromorphone" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Hydromorphone" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fantanyl, nasal spray” value="Fantanyl, transdermal patch" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c5" onchange="calculate11('7.2')"></td>
-              <td><input Id="MED-fent-trans-patch" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-fent-trans-patch" type=”text” name="sum" value="" disabled></td> 
           </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Levomethadyl acetate” value="Levomethadyl acetate" id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r8c2" onchange="calculate12('8')"></td>
-              <td><input Id="MED-Levomethadyl-acetate" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Levomethadyl-acetate" type=”text” name="sum" value="" disabled></td>
               <td><input  value="*Dosage of above transdermal medication in mcg/hr" disabled></td>
            </tr>
             <tr>
               <td><input class="tg-yw41" type=”text” name=”Levomethadyl tartrate” value="Levomethadyl tartrate" id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r9c2" onchange="calculate13('11')"></td>
-              <td><input Id="MED-Levorphanol-tartrate" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Levorphanol-tartrate" type="sum" name=”zero” value="" disabled></td>
               <td><input  value="Intrathecal opioids" disabled></td>
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Meperidine” value="Meperidine" id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r10c2" onchange="calculate14('.1')"></td>
-              <td><input Id="MED-Meperidine" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Meperidine" type=”text” name="sum" value="" disabled></td>
               <td><input  value="Intrathecal opioids" disabled></td>
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Methadone” value="Methadone" id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r11c2" onchange="calculate15('3')"></td>
-              <td><input Id="MED-Methadone" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Methadone" type=”text” name="sum" value="" disabled></td>
               <td><input  value="Intrathecal opioids" disabled></td>
            </tr>
             <tr>
               <td><input class="tg-yw41" type=”text” name=”Morphine” value=Morphine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r12c2" onchange="calculate16('1')"></td>
-              <td><input Id="MED-Morphine" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Morphine" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Diamorphone” value="Diamorphone" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r12c5" onchange="calculate17('98')"></td>
-              <td><input Id="MED-Diamorphone" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Diamorphone" type=”text” name="sum" value="" disabled></td> 
           </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Opium” value=Opium id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r13c2" onchange="calculate18('1')"></td>
-              <td><input Id="MED-Opium" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Opium" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fentanyl” value="Fentanyl" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r13c5" onchange="calculate19('30')"></td>
-              <td><input Id="MED-Fentanyl" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Fentanyl" type=”text” name="sum"value="" disabled></td> 
           </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Oxycodone” value=Oxycodone id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r14c2" onchange="calculate20('1.5')"></td>
-              <td><input Id="MED-Oxycodone" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Oxycodone" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Hydromorphone” value="Hydromorphone" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r14c5" onchange="calculate21('375')"></td>
-              <td><input Id="MED-Hydromorphone-intra" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Hydromorphone-intra" type=”text” name="sum" value="" disabled></td> 
           </tr>
             <tr>
               <td><input class="tg-yw41" type=”text” name=”Oxymorphone” value=Oxymorphone id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r15c2" onchange="calculate22('3')"></td>
-              <td><input Id="MED-Oxymorphone" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Oxymorphone" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Meperidine” value="Meperidine" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r15c5" onchange="calculate23('7.5')"></td>
-              <td><input Id="MED-Meperidine-intra" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Meperidine-intra" type=”text” name="sum" value="" disabled></td> 
           </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Pentazocine” value=Pentazocine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r16c2" onchange="calculate24('.37')"></td>
-              <td><input Id="MED-Pentazocine" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Pentazocine" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Methadone” value="Methadone" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r16c5" onchange="calculate25('600')"></td>
-              <td><input Id="MED-Methadone-intra" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Methadone-intra" type=”text” name="sum" value="" disabled></td> 
           </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Taentadol” value=Tapentadol id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r17c2" onchange="calculate26('.4')"></td>
-              <td><input Id="MED-Tapentadol" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Tapentadol" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Morphine” value="Morphine" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r17c5" onchange="calculate27('300')"></td>
-              <td><input Id="MED-Morphine-intra" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Morphine-intra" type=”text” name="sum" value="" disabled></td> 
           </tr>
             <tr>
               <td><input class="tg-yw41" type=”text” name=”Tramadol” value=Tramadol id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c2" onchange="calculate28('.1')"></td>
-              <td><input Id="MED-Tramadol" type=”text” name=”zero” value="" disabled></td>
+              <td><input Id="MED-Tramadol" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Sufentanil” value="Sufentanil" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c5" onchange="calculate29('60')"></td>
-              <td><input Id="MED-Sufentanil-intra" type=”text” name=”zero” value="" disabled></td> 
+              <td><input Id="MED-Sufentanil-intra" type=”text” name="sum" value="" disabled></td> 
           </tr>
+           <tr>
+              <td><input  value="Total Daily Morphine Equivalent Dose (MED) in Milligrams" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c2" onchange="calculate28('.1')"></td>
+           </td>
            
        </table>
    </form>
