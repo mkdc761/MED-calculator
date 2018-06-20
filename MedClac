@@ -31,20 +31,75 @@
               <th>Daily Dose (mg)</th>
               <th>MED</th>              
            </tr>
-        <tr>
-           <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
-           <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2" onchange="calculate('30')"></td>
-           <td ><input Id="MED-bup-tab" type=”text” name=”zero” value="" ></td>              
-       </tr>
-     </table>
- </form>
-  <script type="text/javascript">
-    function calculate(x) 
-    {
-      var my1 = x;
-      var my2 = document.getElementById('r2').value;
-      document.getElementById('MED-bup-tab').value = parseInt(my1) * parseInt(my2);        
-    }
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c2" onchange="calculate('30')"></td>
+              <td><input Id="MED-bup-tab" type=”text” name=”zero” value="" ></td>
+              <td><input class="tg-yw41" type=”text” name=”buprenorphine-trans-patch” value="Buprenorphine, transdermal patch" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c5" onchange="calculate1('12.6')"></td>
+              <td><input Id="MED-bup-trans" type=”text” name=”zero” value="" ></td> 
+           </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Butorphanol” value=Butorphanol id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c2" onchange="calculate2('7')"></td>
+              <td><input Id="MED-Butorphanol" type=”text” name=”zero” value="" ></td>
+              <td><input class="tg-yw41" type=”text” name=”buprenorphine-film” value="Buprenorphine, film" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c5" onchange="calculate3('0.03')"></td>
+              <td><input Id="MED-bup-film" type=”text” name=”zero” value="" ></td> 
+           </tr>
+           <tr>
+              <td><input class="tg-yw41" type=”text” name=”Codeine” value=Codeine id="med” disabled></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c2" onchange="calculate4('.15')"></td>
+              <td><input Id="MED-Codeine" type=”text” name=”zero” value="" ></td>
+              <td><input class="tg-yw41" type=”text” name=”Fantanyl, buccal/Sl tab or lozenge/troche” value="Fantanyl, buccal/Sl tab or lozenge/troche" disabled></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c5" onchange="calculate5('0.13')"></td>
+              <td><input Id="MED-fent-buc" type=”text” name=”zero” value="" ></td> 
+           </tr>
+       </table>
+   </form>
+    <script type="text/javascript">
+      function calculate(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r2c2').value;
+        document.getElementById('MED-bup-tab').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+      function calculate1(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r2c5').value;
+        document.getElementById('MED-bup-trans').value = (parseFloat(my1) * parseFloat(my2))/7;        
+       }
+      
+       function calculate2(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r3c2').value;
+        document.getElementById('MED-Butorphanol').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate3(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r3c5').value;
+        document.getElementById('MED-bup-film').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate4(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r4c2').value;
+        document.getElementById('MED-Codeine').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
+       function calculate5(x) 
+       {
+        var my1 = x;
+        var my2 = document.getElementById('r4c5').value;
+        document.getElementById('MED-fent-buc').value = parseFloat(my1) * parseFloat(my2);        
+       }
+      
     </script>    
   </body>   
 </html>
