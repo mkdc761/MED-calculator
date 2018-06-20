@@ -373,6 +373,11 @@
         var my2 = document.getElementById('r18c5').value;
         document.getElementById('MED-Sufentanil-intra').value = parseFloat(my1) * parseFloat(my2);        
        }
+       
+       function sumTotal()
+      {
+        
+      }
     </script>    
   </body>   
 </html>
