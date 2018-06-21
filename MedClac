@@ -162,7 +162,7 @@
            <tr>
               <td><input  value="Total Daily Morphine Equivalent Dose (MED) in Milligrams" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c2" onchange="calculate28('.1')"></td>
-           </td>
+           </tr>
            
        </table>
    </form>
@@ -391,7 +391,7 @@
            for(var i=0; i<total.length; i++)
           {
              
-            totalMED += new total[i]).value; 
+            totalMED += total[i]).value; 
              
            }
           document.getElementById('r19c2').value = totalMED;
