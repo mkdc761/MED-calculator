@@ -374,10 +374,36 @@
         document.getElementById('MED-Sufentanil-intra').value = parseFloat(my1) * parseFloat(my2);        
        }
        
-       function sumTotal()
-      {
-        
-      }
+       //      function sum() 
+//       {
+//         var a = document.getElementById('MED-Sufentanil-intra').value;
+//         var b = document.getElementById('MED-Tramadol').value;
+//         totalMED = (a + b);
+ //        document.getElementById('r19c2').value = totalMED;
+         
+         
+//       }
+//     
+           
+        function sum() {
+          var total = document.getElementsByName('sum').value;
+          var sum = 0;
+           for(var i=0; i<total.length; i++)
+          {
+             
+            totalMED += new total[i]).value; 
+             
+           }
+          document.getElementById('r19c2').value = totalMED;
+         }
+      
+    //  function sum(form)
+     //  {
+     //   var totalMED = 0;
+     //   for(var i = 0; i < form.sum.length; i++)
+     //   totalMED += parseFloat(form.sum[i].value);
+    //    form.total.value = totalMED;
+    //    }
     </script>    
   </body>   
 </html>
