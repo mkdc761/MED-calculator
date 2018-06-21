@@ -382,7 +382,7 @@
   </body>   
 </html>
 
-
+<!--change oral methadone to 3 different conversion base don dosage...=IF(C12>60, C12*12,IF(C12>40, C12*10,IF(C12>20, C12*8,IF(C12<=20, C12*4))))-->
  <!--I will redo styling at the end. <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="MED” value=”MED" id="header” disabled></td>
