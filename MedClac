@@ -161,10 +161,12 @@
           </tr>
            <tr>
               <td><input  value="Total Daily Morphine Equivalent Dose (MED) in Milligrams" disabled></td>
-              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r18c2" onchange="calculate28('.1')"></td>
+              <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r19c2"></td>
            </tr>
            
        </table>
+        <button type="button" onclick="sum()">MED total</button><button type="button" onclick="clear()">Clear all</button>
+   </form>
    </form>
     <script type="text/javascript">
       function calculate(x) 
