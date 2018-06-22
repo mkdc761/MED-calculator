@@ -169,6 +169,13 @@
    </form>
    </form>
     <script type="text/javascript">
+       function clear()
+      {
+          var clear = 0;
+          ddocument.getElementsByName('dose').value = clear;
+          ddocument.getElementsByName('sum').value = clear;
+        }
+    
       function calculate(x) 
        {
         var my1 = x;
