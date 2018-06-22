@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
    <head>
    <SCRIPT language="javascript" src="date.js"></SCRIPT>
@@ -167,15 +166,27 @@
        </table>
         <button type="button" onclick="sum()">MED total</button><button type="button" onclick="clear()">Clear all</button>
    </form>
-   </form>
+
     <script type="text/javascript">
-       function clear()
+      
+      function sum()
       {
-          var clear = 0;
-          ddocument.getElementsByName('dose').value = clear;
-          ddocument.getElementsByName('sum').value = clear;
+        var total = document.getElementsByName('sum');
+        var totalMED = 0;
+        
+        for(var i = 0; i < total.length; i++)
+        {
+          if(!isNAN(parseFloat(total[i].value)))
+            {
+              
+              totalMED += parseFloat(total[i]);
+               document.getElementById('r19c2').value = totalMED;
+            }
+           
         }
-    
+       
+      }
+      
       function calculate(x) 
        {
         var my1 = x;
@@ -383,36 +394,7 @@
         document.getElementById('MED-Sufentanil-intra').value = parseFloat(my1) * parseFloat(my2);        
        }
        
-       //      function sum() 
-//       {
-//         var a = document.getElementById('MED-Sufentanil-intra').value;
-//         var b = document.getElementById('MED-Tramadol').value;
-//         totalMED = (a + b);
- //        document.getElementById('r19c2').value = totalMED;
-         
-         
-//       }
-//     
-           
-        function sum() {
-          var total = document.getElementsByName('sum').value;
-          var sum = 0;
-           for(var i=0; i<total.length; i++)
-          {
-             
-            totalMED += total[i]).value; 
-             
-           }
-          document.getElementById('r19c2').value = totalMED;
-         }
-      
-    //  function sum(form)
-     //  {
-     //   var totalMED = 0;
-     //   for(var i = 0; i < form.sum.length; i++)
-     //   totalMED += parseFloat(form.sum[i].value);
-    //    form.total.value = totalMED;
-    //    }
+ 
     </script>    
   </body>   
 </html>
