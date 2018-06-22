@@ -184,7 +184,7 @@
             }
            
         }
-       
+       console.log(totalMED);
       }
       
       function calculate(x) 
