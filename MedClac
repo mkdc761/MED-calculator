@@ -401,14 +401,14 @@ are repeated in a row once, total 6 coluns per row. Some right hand columns are 
            <tr>
               <td><input  value="Total Daily Morphine Equivalent Dose (MED) in Milligrams" disabled></td>
               
-     //This is the <td> element that should receive the output from the _sum() function
+     <--This is the <td> element that should receive the output from the _sum() function -->
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r19c2"></td>
            </tr>
            
          </table>
       
-    // I tired adding the document.querySelectorALL(sum) to the onclick_sum as a argument to pass the node list of <td> values   
-           <button type="button" onclick="_sum()">MED total</button><button type="button" onclick="clear()">Clear all</button>
+    <!-- I tired adding the document.querySelectorALL(sum) to the onclick_sum as a argument to pass the node list of <td> values   
+           <button type="button" onclick="_sum()">MED total</button><button type="button" onclick="clear()">Clear all</button> -->
  
   </body>
 </html>
