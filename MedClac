@@ -7,9 +7,24 @@
 
     </style>
     <script type="text/javascript">
+    
+
+      function _sum() {  // sum function to add all converted MED values   
+        var total = document.querySelectorAll("sum"); // querySelectorAll creates node list (array of elements) from "sum" (from name attribute in <td>) and sets to var total
+        var TotalMED = 0;
+        for(var i = 0; i < total.length; i++)
+        {
+          if(!isNAN(parseFloat(total[i].value))) // loops node list/array if a number is present in node list .value 
+            {
+              console.log(total[i].value); //This is to check that node list created (It did at some point)
+              totalMED += parseFloat(total[i]); //adds all values 
+              return totalMED       
+            }
+        }     
+         document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID
+     }
       
- // sum function to add all converted MED values
- ///Going to try and use querySeectorAll method
+//    I also tried using the document.getelementByName() method
 //    function sum()
 //     {
 //        var total = document.getElementsByName('sum');
@@ -21,39 +36,16 @@
 //            {
               
 //              totalMED += parseFloat(total[i]);
-//               document.getElementById('r19c2').value = totalMED;
+//               document.getElementById('r19c2').value = totalMED; // ID r19c2 stands for row 19 column 2, all <td> elements organized this way
 //            }
 //           
 //        }
 //       console.log(totalMED);
 //      } 
       
- //calculate(x) function converted user input daily dose to MED, conversion factor (x) from <td> to function argument function...some 29 total functions,
- //will try and recode and use one function in future since so similar. 
-      
-     function _sum(x) {
-       
-        var total = x;
-        var TotalMED = 0;
-        for(var i = 0; i < total.length; i++)
-        {
-          if(!isNAN(parseFloat(total[i].value)))
-            {
-              console.log(total[i].value);
-              totalMED += parseFloat(total[i]);
-              return totalMED       
-            }
-        }
-       
-         document.getElementById('r19c2').value = totalMED;
-     }
-       
-      
-        
-       
- 
-      
-       
+ //The calculate(x) function converts user input of daily dose to MED, using conversion factor (x) from <td>
+ //...29 total functions, will try and recode and use one function in future since so similar.
+         
       function calculate(x) 
        {
         var my1 = x;
@@ -264,10 +256,12 @@
     </script>
 </head>
 <body>
-<!-- This table includes a series of columns and row. Columns are labeled for the medication, dose, and converted MED. Columns are repeated. 
-Right hand column is altered to provide category for intrathecal opioids...need css styling. Used Josh MED Calculator as model.
-  -->       <table>
-           <tr> <!--Column labels -->
+
+<!-- This table includes a series of columns and row. Columns are labeled at top for the medication, dose, and converted MED. Columns  
+are repeated in a row once. Right hand columns are altered to provide category for intrathecal opioids...need css styling. 
+  -->       
+      <table>
+           <tr> <!--Column headers -->
               <th>Medications</th>
               <th>Daily Dose (mg)</th>
               <th>MED</th>
@@ -275,7 +269,9 @@ Right hand column is altered to provide category for intrathecal opioids...need 
               <th>Daily Dose (mg)</th>
               <th>MED</th>              
            </tr>
-           <tr>
+           
+           <!--all the labels, input boxes, and output boxes-->
+           <tr> <1-- one row with 6 coloumns-->
               <td><input class="tg-yw41" type=”text” name=”buprenorphine-tablet-film” value=Burpenorphine id="med” disabled></td>
               <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c2" onchange="calculate('30')"></td>
               <td><input Id="MED-bup-tab" type=”text” name="sum" value="" disabled></td>
@@ -405,17 +401,21 @@ Right hand column is altered to provide category for intrathecal opioids...need 
            </tr>
            <tr>
               <td><input  value="Total Daily Morphine Equivalent Dose (MED) in Milligrams" disabled></td>
+              
+     //This is the <td> element that should receive the output from the _sum() function
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r19c2"></td>
            </tr>
            
          </table>
-           <button type="button" onclick="_sum(document.querySelectorAll("sum"))">MED total</button><button type="button" onclick="clear()">Clear all</button>
+      
+    // I tired adding the document.querySelectorALL(sum) to the onclick_sum as a argument to pass the node list of <td> values   
+           <button type="button" onclick="_sum()">MED total</button><button type="button" onclick="clear()">Clear all</button>
  
   </body>
 </html>
 
-<!--change oral methadone to 3 different conversion base don dosage...=IF(C12>60, C12*12,IF(C12>40, C12*10,IF(C12>20, C12*8,IF(C12<=20, C12*4))))-->
- <!--I will redo styling at the end. <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
+<!--change oral methadone to 3 different conversion based on dosage...=IF(C12>60, C12*12,IF(C12>40, C12*10,IF(C12>20, C12*8,IF(C12<=20, C12*4))))-->
+<!--I will redo styling at the end. <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="daily-dose” value=”Daily Dose (mg)" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="MED” value=”MED" id="header” disabled></td>
                <th><input class="tg-yw41" type=”text” name="medication” value=”Medications" id="header” disabled></td>
