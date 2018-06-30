@@ -46,7 +46,7 @@
  //The calculate(x) function converts user input of daily dose to MED, using conversion factor (x) from <td>
  //...29 total functions, will try and recode and use one function in future since so similar.
          
-      function calculate(x) 
+      function calculate(x) //simple multiplication function using input and passed conversion factor
        {
         var my1 = x;
         var my2 = document.getElementById('r2c2').value;
