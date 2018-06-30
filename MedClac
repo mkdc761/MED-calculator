@@ -8,20 +8,19 @@
     </style>
     <script type="text/javascript">
     
-
-      function _sum() {  // sum function to add all converted MED values, called by onclick event line 412  
-        var total = document.querySelectorAll("sum"); // querySelectorAll creates node list (array of elements) from "sum" (from name attribute in <td>) and sets to var total
+      function _sum() {  // sum function to add all converted MED values, called by onclick event line 411  
+        var total = document.querySelectorAll("sum"); // querySelectorAll creates node list (array of elements) from "sum" <td elements> (from name attribute) and sets to var total
         var TotalMED = 0;
         for(var i = 0; i < total.length; i++)
         {
-          if(!isNAN(parseFloat(total[i].value))) // loops node list/array if a number is present in node list .value 
+          if(!isNAN(parseFloat(total[i].value))) // loops node list/array if a number is present in node list total.value 
             {
               console.log(total[i].value); //This is to check that node list created (It did at some point)
               totalMED += parseFloat(total[i]); //adds all values 
               return totalMED       
             }
         }     
-         document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID (line 406)
+         document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID (line 405). r19c2 = row 19 column 2 on table
      }
       
 //    I also tried using the document.getelementByName() method
@@ -46,7 +45,7 @@
  //The calculate(x) function converts user input of daily dose to MED, using conversion factor (x) from <td>
  //...29 total functions, will try and recode and use one function in future since so similar.
          
-      function calculate(x) //simple multiplication function using input and passed conversion factor
+      function calculate(x) //simple multiplication function using input and passed conversion factor, repeated 29 times slightly different
        {
         var my1 = x;
         var my2 = document.getElementById('r2c2').value;
@@ -257,8 +256,8 @@
 </head>
 <body>
 
-<!-- This table includes a series of columns and row. Columns are labeled at top for the medication, dose, and converted MED. Columns  
-are repeated in a row once. Right hand columns are altered to provide category for intrathecal opioids...need css styling. 
+<!-- This table includes a series of columns and row. Columns are labeled at top for the medication, dose, and converted MED. Three columns  
+are repeated in a row once, total 6 coluns per row. Some right hand columns are altered to provide category for intrathecal opioids...need css styling. 
   -->       
       <table>
            <tr> <!--Column headers -->
