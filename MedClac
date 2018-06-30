@@ -9,7 +9,7 @@
     <script type="text/javascript">
     
 
-      function _sum() {  // sum function to add all converted MED values   
+      function _sum() {  // sum function to add all converted MED values, called by onclick event line 412  
         var total = document.querySelectorAll("sum"); // querySelectorAll creates node list (array of elements) from "sum" (from name attribute in <td>) and sets to var total
         var TotalMED = 0;
         for(var i = 0; i < total.length; i++)
@@ -21,7 +21,7 @@
               return totalMED       
             }
         }     
-         document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID
+         document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID (line 406)
      }
       
 //    I also tried using the document.getelementByName() method
