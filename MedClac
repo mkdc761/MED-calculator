@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<form>
 <head>
     <style type="text/css">
 
@@ -14,34 +15,32 @@
 		console.log(total)
         for(var i = 0; i < total.length; i++)
         {
-          if(!isNAN(parseFloat(total[i].value))) // loops node list/array if a number is present in node list total.value 
+          if(!isNaN(parseFloat(total[i].value))) // loops node list/array if a number is present in node list total.value 
             {
-              console.log(total[i].value); //This is to check that node list created (It did at some point)
-              totalMED += parseFloat(total[i]); //adds all values      
+              console.log(total[i].value); //This is to check that node list created 
+              totalMED += parseFloat(total[i].value); //adds all values  
+              
             }
+          document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID (line 405). r19c2 = row 19 column 2 on table 
         }     
-        document.getElementById('r19c2').value = totalMED; //passes value back to <td> with specified ID (line 405). r19c2 = row 19 column 2 on table
+            
 		return totalMED  
 	 }
-      
-//    I also tried using the document.getelementByName() method
-//    function sum()
-//     {
-//        var total = document.getElementsByName('sum');
- //       var totalMED = 0;
-        
-//        for(var i = 0; i < total.length; i++)
-//        {
-//          if(!isNAN(parseFloat(total[i].value)))
-//            {
-              
-//              totalMED += parseFloat(total[i]);
-//               document.getElementById('r19c2').value = totalMED; // ID r19c2 stands for row 19 column 2, all <td> elements organized this way
-//            }
-//           
-//        }
-//       console.log(totalMED);
-//      } 
+
+     function clear()
+       {
+         var dose = document.querySelectorAll(".tg-yw41");
+         var MED = document.QuerySelectorAll(".sum");
+         var T_MED = getElementByID("r19c2");
+
+         dose.value = 0;
+         MED.value = "";
+         T_Med.value = "";
+
+         return dose;
+         return MED;
+         return T_MED;
+       }
       
  //The calculate(x) function converts user input of daily dose to MED, using conversion factor (x) from <td>
  //...29 total functions, will try and recode and use one function in future since so similar.
@@ -345,7 +344,7 @@ are repeated in a row once, total 6 coluns per row. Some right hand columns are 
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Morphine” value=Morphine id="med” disabled></td>
-              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r12c2" onchange="calculate16('1')"></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0" Id="r12c2" onchange="calculate16('1')"></td>
               <td><input class="sum" Id="MED-Morphine" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Diamorphone” value="Diamorphone" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r12c5" onchange="calculate17('98')"></td>
@@ -353,7 +352,7 @@ are repeated in a row once, total 6 coluns per row. Some right hand columns are 
            </tr>
            <tr>
               <td><input class="tg-yw41" type=”text” name=”Opium” value=Opium id="med” disabled></td>
-              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r13c2" onchange="calculate18('1')"></td>
+              <td>'TEXT"</td><td><input class ="tg-yw41" type=”text” name=”dose” value="0" placeholder="0" Id="r13c2" onchange="calculate18('1')"></td>
               <td><input class="sum" Id="MED-Opium" type=”text” name="sum" value="" disabled></td>
               <td><input class="tg-yw41" type=”text” name=”Fentanyl” value="Fentanyl" disabled></td>
               <td><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r13c5" onchange="calculate19('30')"></td>
@@ -409,9 +408,10 @@ are repeated in a row once, total 6 coluns per row. Some right hand columns are 
          </table>
       
     <!-- I tired adding the document.querySelectorALL(sum) to the onclick_sum as a argument to pass the node list of <td> values -->  
-           <button type="button" onclick="_sum()">MED total</button><button type="button" onclick="clear()">Clear all</button>
+           <button type="button" onclick="_sum()">MED total</button><button type="reset" value="Reset">Clear</button>
  
   </body>
+ </form>
 </html>
 
 <!--change oral methadone to 3 different conversion based on dosage...=IF(C12>60, C12*12,IF(C12>40, C12*10,IF(C12>20, C12*8,IF(C12<=20, C12*4))))-->
