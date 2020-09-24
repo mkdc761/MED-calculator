@@ -1,4 +1,5 @@
 
+
 <html>
 <form>
 <head>
@@ -151,7 +152,7 @@ color: black !important;
  //The calculate(x) function converts user input of daily dose to MED, using conversion factor (x) from <td>
  //...29 total functions, will try and recode and use one function in future since so similar.
          
-      function calculate(x) //simple multiplication function using input and passed conversion factor, repeated 29 times slightly different
+      /*function calculate(x) //simple multiplication function using input and passed conversion factor, repeated 29 times slightly different
        {
         var my1 = x;
         var my2 = document.getElementById('r2c2').value;
@@ -163,7 +164,7 @@ color: black !important;
         var my1 = x;
         var my2 = document.getElementById('r2c5').value;
         document.getElementById('MED-bup-trans').value = (parseFloat(my1) * parseFloat(my2))/7;        
-       }
+       }*/
       
        function calculate2(x) 
        {
@@ -174,9 +175,9 @@ color: black !important;
       
        function calculate3(x) 
        {
-        var my1 = x;
+       /* var my1 = x;
         var my2 = document.getElementById('r3c5').value;
-        document.getElementById('MED-bup-film').value = parseFloat(my1) * parseFloat(my2);        
+        document.getElementById('MED-bup-film').value = parseFloat(my1) * parseFloat(my2);   */ 
        }
       
        function calculate4(x) 
@@ -397,59 +398,60 @@ are repeated in a row once, total 6 coluns per row. Some right hand columns are 
            </tr>
            
            <!--all the labels, input boxes, and output boxes-->
-           <tr id="Row2"> <!-- one row with 6 coloumns-->
-              <td class="tg"><input  type=”text” style="font-weight: Bold" disabled name=”buprenorphine-tablet-film” value=Buprenorphine id="med” ></td>
-                <td>"text"</td><td class="tg-1" style="color: black;""><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c2" onchange="calculate('30')"></td>
+           <!--<tr id="Row2">--> <!-- one row with 6 coloumns-->
+            <!--  <td class="tg"><input  type=”text” style="font-weight: Bold" disabled name=”buprenorphine-tablet-film” value=Buprenorphine id="med” ></td>
+               <td>"text"</td><td class="tg-1" style="color: black;""><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c2" onchange="calculate('30')"></td>
               <td class="tg-1"><input class="sum" Id="MED-bup-tab" type=”text” name="sum" value="" disabled></td>
               <td class="tg"><input class="inputBox" type=”text” name=”buprenorphine-trans-patch” value="Buprenorphine, transdermal patch*" disabled style="font-weight: Bold"></td>
               <td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r2c5" onchange="calculate1('12.6')"></td>
               <td class="tg-1" ><input class="sum" Id="MED-bup-trans" type=”text” name="sum"value="" disabled></td> 
-           </tr>
+           </tr>-->
            <tr id="Row3" >
               <td class="tg" bgcolor="#c1d0f0" ><input type=”text" disabled STYLE="background-color: #c1d0f0; font-weight: bold"  name=”Butorphanol” value=Butorphanol id="med”  ></td>
               <td>"TEXT"</td><td class="tg-1" bgcolor="#c1d0f0"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c2" onchange="calculate2('7')" style="background-color:#c1d0f0"></td>
               <td class="tg-1" bgcolor="#c1d0f0"><input class="sum" Id="MED-Butorphanol" type=”text” ; name="sum" value="" disabled style="background-color:#c1d0f0" ></td>
-              <td class="tg" bgcolor="#eee6ff"><input class="inputBox" type=”text” name=”buprenorphine-film” value="Buprenorphine, film" disabled style="background-color:#eee6ff; font-weight: bold" ></td>
-              <td class="tg-1" bgcolor="#eee6ff"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r3c5" onchange="calculate3('0.03')" style="background-color:#eee6ff"></td>
-              <td class="tg-1" bgcolor="#eee6ff"><input class="sum" Id="MED-bup-film" type=”text” name="sum" value="" disabled style="background-color:#eee6ff"></td> 
+              <td class="tg" ><input class="inputBox" type=”text” style="font-weight: bold" name=”Fantanyl, buccal/Sl tab or lozenge/troche” value="Fentanyl, buccal/Sl tab or lozenge/troche" disabled></td>
+              <td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c5" onchange="calculate5('0.13')"></td>
+              <td class="tg-1"><input class="sum" Id="MED-fent-buc" type=”text” name="sum" value="" disabled></td> 
+              <!--<td class="tg" bgcolor="#eee6ff"><input class="inputBox" type=”text” name=”buprenorphine-film” value=""disabled style="background-color:#eee6ff; font-weight: bold" ></td>
+              <td class="tg" bgcolor="#eee6ff"><input class ="inputBox" type=”text” name=”dose” value="" disabled style="background-color:#eee6ff"></td>
+              <td class="tg-1" bgcolor="#eee6ff"><input class="sum" Id="MED-bup-film" type=”text” name="sum" value="" disabled style="background-color:#eee6ff"></td> -->
            </tr>
            <tr id="Row4">
              <td class="tg"><input  type=”text” disabled style="font-weight: bold" name=”Codeine” value=Codeine id="med” ></td>
               <td >'TEXT"</td><td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c2" onchange="calculate4('.15')"></td>
               <td class="tg-1"><input class="sum" Id="MED-Codeine" type=”text” name="sum" value="" disabled></td>
-              <td class="tg" ><input class="inputBox" type=”text” style="font-weight: bold" name=”Fantanyl, buccal/Sl tab or lozenge/troche” value="Fentanyl, buccal/Sl tab or lozenge/troche" disabled></td>
-              <td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r4c5" onchange="calculate5('0.13')"></td>
-              <td class="tg-1"><input class="sum" Id="MED-fent-buc" type=”text” name="sum" value="" disabled></td> 
+              <td class="tg" bgcolor="#eee6ff"><input class="inputBox" type=”text” name=”Fantanyl, film or oral spray” value="Fentanyl, film or oral spray" disabled style="background-color:#eee6ff; font-weight: bold"></td>
+              <td class="tg-1" bgcolor="#eee6ff"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c5" onchange="calculate7('0.18')" style="background-color:#eee6ff"></td>
+              <td class="tg-1" bgcolor="#eee6ff"><input class="sum" Id="MED-fent-film-oralspray" type=”text” name="sum" value="" disabled style="background-color:#eee6ff"></td>
            </tr>
            <tr id="Row5">
               <td class="tg" bgcolor="#c1d0f0"><input  type=”text” disabled STYLE="background-color: #c1d0f0; font-weight:bold" name=”Dihydrocodeine” value=Dihydrocodeine id="med” ></td>
               <td>'TEXT"</td><td class="tg-1" bgcolor="#c1d0f0"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c2" onchange="calculate6('.25')" style="background-color:#c1d0f0" ></td>
               <td class="tg-1" bgcolor="#c1d0f0"><input class="sum" Id="MED-dihydrocodeine" type=”text” name="sum" value="" disabled style="background-color:#c1d0f0"></td>
-              <td class="tg" bgcolor="#eee6ff"><input class="inputBox" type=”text” name=”Fantanyl, film or oral spray” value="Fentanyl, film or oral spray" disabled style="background-color:#eee6ff; font-weight: bold"></td>
-              <td class="tg-1" bgcolor="#eee6ff"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r5c5" onchange="calculate7('0.18')" style="background-color:#eee6ff"></td>
-              <td class="tg-1" bgcolor="#eee6ff"><input class="sum" Id="MED-fent-film-oralspray" type=”text” name="sum" value="" disabled style="background-color:#eee6ff"></td> 
+              <td class="tg"><input  type=”text” name=”Fantanyl, nasal spray” value="Fentanyl, nasal spray" disabled style="font-weight: bold"></td>
+              <td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c5" onchange="calculate9('0.16')"></td>
+              <td class="tg-1"><input class="sum" Id="MED-fent-nasal" type=”text” name="sum"value="" disabled></td>
            </tr>
            <tr id="Row6">
               <td class="tg"><input  type=”text” disabled name=”Hydrocodone” style="font-weight: bold" value=Hydrocodone id="med” ></td>
               <td>'TEXT"</td><td class="tg-1"><input class ="tg-yw41" type=”text”  name=”dose” value="" placeholder="0" Id="r6c2" onchange="calculate8('1')"></td>
               <td class="tg-1"><input class="sum" Id="MED-Hydrocodone" type=”text” name="sum" value="" disabled></td>
-              <td class="tg"><input  type=”text” name=”Fantanyl, nasal spray” value="Fentanyl, nasal spray" disabled style="font-weight: bold"></td>
-              <td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r6c5" onchange="calculate9('0.16')"></td>
-              <td class="tg-1"><input class="sum" Id="MED-fent-nasal" type=”text” name="sum"value="" disabled></td> 
+              <td class="tg" bgcolor="#eee6ff"><input class="inputBox" type=”text” name=”Fantanyl, nasal spray” value="Fentanyl, transdermal patch*" disabled style="background-color:#eee6ff; font-weight: bold"></td>
+              <td class="tg-1" bgcolor="#eee6ff"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c5" onchange="calculate11('7.2')" style="background-color:#eee6ff"></td>
+              <td class="tg-1" bgcolor="#eee6ff"><input class="sum" Id="MED-fent-trans-patch" type=”text” name="sum" value="" disabled style="background-color:#eee6ff"></td> 
            </tr>
            <tr id="Row7">
               <td class="tg" bgcolor="#c1d0f0"><input  type=”text” disabled STYLE="background-color: #c1d0f0; font-weight: bold" name=”Hydromorphone” value=Hydromorphone id="med” ></td>
               <td>'TEXT"</td><td class="tg-1" bgcolor="#c1d0f0"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c2" onchange="calculate10('4')" style="background-color:#c1d0f0"></td>
-              <td class="tg-1" bgcolor="#c1d0f0"><input class="sum" Id="MED-Hydromorphone" type=”text” name="sum" value="" disabled style="background-color:#c1d0f0" ></td>
-              <td class="tg" bgcolor="#eee6ff"><input class="inputBox" type=”text” name=”Fantanyl, nasal spray” value="Fentanyl, transdermal patch*" disabled style="background-color:#eee6ff; font-weight: bold"></td>
-              <td class="tg-1" bgcolor="#eee6ff"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r7c5" onchange="calculate11('7.2')" style="background-color:#eee6ff"></td>
-              <td class="tg-1" bgcolor="#eee6ff"><input class="sum" Id="MED-fent-trans-patch" type=”text” name="sum" value="" disabled style="background-color:#eee6ff"></td> 
+              <td class="tg-1" bgcolor="#c1d0f0"><input class="sum" Id="MED-Hydromorphone" type=”text” name="sum" value="" disabled style="background-color:#c1d0f0" ></td> 
+              <td colspan="3" rowspan=2 class="tg" bgcolor="#ffff80"><input class="tg-special" value="*Dosage of above transdermal medication in mcg/hr" disabled style="background-color:#ffff80; font-weight: bold"></td>    
            </tr>
            <tr id="Row8">
               <td class="tg"><input  type=”text” disabled style="font-weight: bold" name=”Levomethadyl acetate” value="Levomethadyl acetate" id="med” ></td>
               <td>'TEXT"</td><td class="tg-1"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r8c2" onchange="calculate12('8')"></td>
               <td class="tg-1"><input class="sum" Id="MED-Levomethadyl-acetate" type=”text” name="sum" value="" disabled></td>
-              <td colspan="3" class="tg" bgcolor="#ffff80"><input class="tg-special" value="*Dosage of above transdermal medication in mcg/hr" disabled style="background-color:#ffff80; font-weight: bold"></td>
+              
               
            </tr>
            <tr id="Row9">
