@@ -453,7 +453,7 @@ are repeated in a row once, total 6 coluns per row. Some right hand columns are 
               
            </tr>
            <tr id="Row9">
-              <td class="tg" bgcolor="#c1d0f0"><input  type=”text” disabled STYLE="background-color: #c1d0f0; font-weight: bold" name=”Levomethadyl tartrate” value="Levomethadyl tartrate" id="med” ></td>
+              <td class="tg" bgcolor="#c1d0f0"><input  type=”text” disabled STYLE="background-color: #c1d0f0; font-weight: bold" name=”Levorphanol tartrate” value="Levorphanol tartrate" id="med” ></td>
               <td>'TEXT"</td><td class="tg-1" bgcolor="#c1d0f0"><input class ="tg-yw41" type=”text” name=”dose” value="" placeholder="0" Id="r9c2" onchange="calculate13('11')" style="background-color:#c1d0f0" ></td>
               <td class="tg-1" bgcolor="#c1d0f0"><input class="sum" Id="MED-Levorphanol-tartrate" type="sum" name=”zero” value="" disabled style="background-color:#c1d0f0;" ></td>
               <th class="h1" rowspan=3 bgcolor="#53c653"> Intrathecal opioids</th>
